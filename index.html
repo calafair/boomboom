@@ -106,33 +106,13 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>GameOS Settings</h2>
-    <h3>Cloaking</h3>
-    <input id="tbt" type="text" placeholder="Tab Title">
-    <input id="tbi" type="text" placeholder="Tab Icon URL">
+    <h3>Change Server</h3>
+    <div class="btn-group"><button onclick="location.replace('https://ixlmath.vercel.app');">IXLMATH</button><button onclick="location.replace('https://weboomit.vercel.app');">WEBOOMIT</button><button onclick="location.replace('https://boomboomboom.vercel.app');">BOOMBOOMBOOM</button><button onclick="location.replace('https://cottonco.vercel.app');">COTTONCO</button></div>
     <p>You are running GameOS stable v2.1</p>
   </div>
 </div>
 <script src="https://nextapps-de.github.io/winbox/dist/winbox.bundle.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-$("#tbt").click(function(){
-var titletext = document.getElementById('tbt').value
-  setInterval(function(){document.getElementsByTagName('title')[0].innerHTML = 'titletext';}, 500);
-});
-});
-</script>
-<script>
-$(document).ready(function(){
-$("#tbi").click(function(){
-var titleicon = document.getElementById('tbi').value
-document.getElementsByTagName('link')[0].setAttribute("href", titleicon);
-  setInterval(function(){$("#tbi").click(function(){
-var titleicon = document.getElementById('tbi').value
-document.getElementsByTagName('link')[0].setAttribute("href", titleicon);}, 500);
-});
-});
-</script>
 <script>
 $(document).ready(function(){
 $("#default").click(function(){
