@@ -118,7 +118,7 @@
 $(document).ready(function(){
 $("#tbt").click(function(){
 var titletext = document.getElementById('tbt').value
-document.getElementsByTagName('title')[0].innerHTML = 'titletext';
+  setInterval(function(){document.getElementsByTagName('title')[0].innerHTML = 'titletext';}, 500);
 });
 });
 </script>
@@ -127,6 +127,9 @@ $(document).ready(function(){
 $("#tbi").click(function(){
 var titleicon = document.getElementById('tbi').value
 document.getElementsByTagName('link')[0].setAttribute("href", titleicon);
+  setInterval(function(){$("#tbi").click(function(){
+var titleicon = document.getElementById('tbi').value
+document.getElementsByTagName('link')[0].setAttribute("href", titleicon);}, 500);
 });
 });
 </script>
