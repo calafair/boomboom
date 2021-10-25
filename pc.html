@@ -1,0 +1,87 @@
+<style>
+body {
+margin: 0;
+background: #000;
+}
+
+#canvas {
+min-height: 70vh;
+max-width: 100%;
+background: url('') center no-repeat;
+background-size: 50%;
+background-position-x: 55%;
+}
+
+@media (min-width:801px) {
+#canvas {
+background-position-x: 50%;
+background-size: 20%;
+min-height: 100vh;
+}
+}
+
+
+.splitter {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+@font-face {
+font-family: 'ArcadeR';
+src: url('https://pacman.cc/html5/font/ARCADE_R.TTF');
+/*
+src: url('https://pacman.cc/html5/font/PressStart2P.ttf');
+*/
+}
+
+#canvas-warning {
+color: #FF0;
+font-size: 1.5em;
+}
+
+#about-game{
+
+color: white;
+font-family: ArcadeR;
+font-size: 1em;
+text-align: center;
+max-width: 700px;
+}
+</style>
+
+<script src="https://pacman.cc/html5/pacman.js"></script>
+
+
+<style>
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+#leftads, #rightads{ display: none; }
+}
+</style>
+</head>
+
+
+<body>
+<div id="about-game" >
+<h1 style="font-size: 0.9em;">HTML5 PAC-MAN GAMES</h1>
+<a class='start-btn' href="/"></a>
+</div>
+
+<canvas id='canvas'>
+<div id="canvas-warning">Your browser does not support HTML Canvas. Please upgrade!</div>
+</canvas>
+<canvas id='atlas' style="display:none"></canvas>
+
+
+
+<script>window.addEventListener("keydown", function(e) {
+// space and arrow keys
+if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+e.preventDefault();
+}
+}, false);</script>
+
+
+</body>
+
+</html>
