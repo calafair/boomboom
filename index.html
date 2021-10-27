@@ -19,9 +19,26 @@
   width:120px;
 }
   
+  #main {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  
   .dark-mode {
-background: #222f3e !important;
+background: rgba(35,35,45,1) !important;
 color: white !important;
+  }
+  
+  .dark-mode.modal-content {
+box-shadow: 10px 10px 90px 15px black;
+  }
+  
+  .dark-mode button:hover {
+background: rgba(57,57,67,1) !important;
+  }
+  
+  .dark-mode button {
+background: rgba(45,45,50,1) !important;
   }
   
   .modal {
@@ -43,8 +60,10 @@ color: white !important;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 0px solid #888;
+  box-shadow: 10px 10px 90px 15px #888888;
   width: 80%;
+  
 }
 
 /* The Close Button */
@@ -75,10 +94,10 @@ color: white !important;
   transition: 0.15s;
 }
 
-button:hover {background: rgba(60,60,60,1) !important;}
+button:hover {background: #3e8e41;}
 
 .btn-group button:hover {
-  background-color: rgba(90,90,90,1) !important;
+  background-color: #3e8e41;
 }
 .btn-group button:active {
   transform: scale(1.2);
@@ -91,6 +110,7 @@ button:hover {background: rgba(60,60,60,1) !important;}
 <span style="display: none;" data-fact="Cabbage" data-type="Avocado">A Century of Physics By the end of the nineteenth century after more than two thousand years of intellectual struggle that began with the Greek philosophers, physical scientists had reason to believe that they were beginning to understand the universe. Their theories of matter and energy, of electricity and magnetism, of heat and sound and light were confirmed in laboratories throughout the world with increasing precision. Experimentation was the method and mathematics the language of a...</span>
 <span style="display: none;" data-fact="Avocado" data-type="Beet">A Formal Education teaches an individual to learn academic skills, and this Education begins at the elementary level and continues until college. The process follows a set of rules and regulations for the completion of a formal degree.</span>
 <body>
+  <div id="main">
 <div id="keybox" style="visibility: hidden;">
 <div class="btn-group">
 <h1>Ga&#8203;m&#8203;eO&#8203;S v&#8203;2.&#8203;6</h1>
@@ -123,6 +143,7 @@ button:hover {background: rgba(60,60,60,1) !important;}
     </div><br><br>
     <p>Y&#8203;o&#8203;u&#8203; a&#8203;r&#8203;e &#8203;r&#8203;un&#8203;n&#8203;i&#8203;n&#8203;g &#8203;G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; &#8203;s&#8203;t&#8203;a&#8203;b&#8203;l&#8203;e&#8203; &#8203;v&#8203;2&#8203;.&#8203;6&#8203;<br>More options coming soon!</p>
   </div>
+    </div>
 </div>
 </body>
 <script src="https://nextapps-de.github.io/winbox/dist/winbox.bundle.js"></script>
@@ -294,7 +315,7 @@ new WinBox({
 title: "Proxy List",
 background: "rgba(80, 80,110, 1)",
 border: 0,
-html: " m&#8203;o&#8203;d&#8203;e&#8203;r&#8203;n&#8203;i&#8203;z&#8203;e&#8203;.&#8203;g&#8203;q&#8203;<br>&#8203;r&#8203;e&#8203;c&#8203;e&#8203;p&#8203;t&#8203;i&#8203;o&#8203;n&#8203;.&#8203;c&#8203;f&#8203;<br>&#8203;t&#8203;r&#8203;e&#8203;a&#8203;t&#8203;y&#8203;g&#8203;u&#8203;i&#8203;d&#8203;e&#8203;.&#8203;c&#8203;o&#8203;m<br>r&#8203;es&#8203;il&#8203;ie&#8203;nce.cx<br>ab&#8203;cle&#8203;ar&#8203;n&#8203;ing.us"
+html: "m&#8203;o&#8203;d&#8203;e&#8203;r&#8203;n&#8203;i&#8203;z&#8203;e&#8203;.&#8203;g&#8203;q&#8203;<br>&#8203;r&#8203;e&#8203;c&#8203;e&#8203;p&#8203;t&#8203;i&#8203;o&#8203;n&#8203;.&#8203;c&#8203;f&#8203;<br>&#8203;t&#8203;r&#8203;e&#8203;a&#8203;t&#8203;y&#8203;g&#8203;u&#8203;i&#8203;d&#8203;e&#8203;.&#8203;c&#8203;o&#8203;m<br>r&#8203;es&#8203;il&#8203;ie&#8203;nce.cx<br>ab&#8203;cle&#8203;ar&#8203;n&#8203;ing.us"
 });
 });
 });
