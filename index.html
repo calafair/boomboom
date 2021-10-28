@@ -66,7 +66,7 @@ background: rgba(45,45,50,1) !important;
   margin: auto;
   padding: 20px;
   border: 0px solid #888;
-  box-shadow: 10px 10px 90px 15px #888888;
+  box-shadow: 10px 10px 90px 15px gray;
   width: 80%;
   
 }
@@ -97,13 +97,17 @@ background: rgba(45,45,50,1) !important;
   cursor: pointer;
   float: left;
   transition: 0.15s;
+  font-size: 16px;
+}
+
+.btn-group::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 button:hover {background: #3e8e41;}
 
-.btn-group button:hover {
-  background-color: #3e8e41;
-}
 .btn-group button:active {
   transform: scale(1.2);
 }
@@ -115,10 +119,10 @@ button:hover {background: #3e8e41;}
 <span style="display: none;" data-fact="Cabbage" data-type="Avocado">A Century of Physics By the end of the nineteenth century after more than two thousand years of intellectual struggle that began with the Greek philosophers, physical scientists had reason to believe that they were beginning to understand the universe. Their theories of matter and energy, of electricity and magnetism, of heat and sound and light were confirmed in laboratories throughout the world with increasing precision. Experimentation was the method and mathematics the language of a...</span>
 <span style="display: none;" data-fact="Avocado" data-type="Beet">A Formal Education teaches an individual to learn academic skills, and this Education begins at the elementary level and continues until college. The process follows a set of rules and regulations for the completion of a formal degree.</span>
 <body>
-  <div id="main">
+  <div id="main" oncontextmenu="return false">
 <div id="keybox" style="visibility: hidden;">
 <div class="btn-group">
-<h1>Ga&#8203;m&#8203;eO&#8203;S v&#8203;2.&#8203;6</h1>
+<p style="font-size: 40px;">Ga&#8203;m&#8203;eO&#8203;S v&#8203;2.&#8203;6</p>
     <button id="default">B&#8203;a&#8203;s&#8203;i&#8203;c A&#8203;r&#8203;c&#8203;a&#8203;d&#8203;e</button>
     <button id="pkmru">P&#8203;o&#8203;k&#8203;é&#8203;m&#8203;o&#8203;n R&#8203;u&#8203;b&#8203;y</button>
     <button id="pkmr">P&#8203;o&#8203;k&#8203;é&#8203;m&#8203;o&#8203;n F&#8203;i&#8203;r&#8203;e&#8203;R&#8203;e&#8203;d</button>
@@ -135,18 +139,25 @@ button:hover {background: #3e8e41;}
     <button id="gba">G&#8203;a&#8203;m&#8203;e&#8203; B&#8203;o&#8203;y A&#8203;d&#8203;v&#8203;a&#8203;n&#8203;c&#8203;e (p&#8203;re&#8203;ss&#8203; pl&#8203;a&#8203;y i&#8203;n t&#8203;oo&#8203;l&#8203;ba&#8203;r &#8203;t&#8203;o s&#8203;t&#8203;ar&#8203;t&#8203;)</button>
     <button id="nes">Ni&#8203;nt&#8203;en&#8203;do&#8203; E&#8203;nt&#8203;er&#8203;ta&#8203;in&#8203;me&#8203;nt&#8203; S&#8203;ys&#8203;te&#8203;m&#8203;</button>
     <button id="tools">G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; &#8203;S&#8203;e&#8203;t&#8203;t&#8203;i&#8203;n&#8203;g&#8203;s&#8203;</button>
+    <button id="bk">G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; &#8203;B&#8203;o&#8203;o&#8203;k&#8203;m&#8203;a&#8203;r&#8203;k&#8203;let</button>
+    <button id="intro">G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; &#8203;Ins&#8203;tr&#8203;u&#8203;c&#8203;t&#8203;i&#8203;o&#8203;n&#8203;s</button>
+    <button id="exit">E&#8203;x&#8203;i&#8203;t&#8203; &#8203;G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S</button>
     </div>
+    <p style="font-size: 35px;">C&#8203;h&#8203;​a&#8203;​n&#8203;​g&#8203;​e&#8203;​l&#8203;​o&#8203;​g&#8203;</p>
+    <p>1&#8203;​0&#8203;​/&#8203;​2&#8203;​8&#8203;​ &#8203;M​&#8203;i​&#8203;n​&#8203;o​&#8203;r &#8203;s​&#8203;t​&#8203;y​&#8203;l​&#8203;e &#8203;u​&#8203;p​&#8203;d​&#8203;a​&#8203;t​&#8203;e​&#8203;s<br><br>
+    1&#8203;​0&#8203;​/&#8203;​2&#8203;​7&#8203;​ &#8203;​I&#8203;​n&#8203;​ &#8203;G​&#8203;a​&#8203;m​&#8203;e​&#8203;O​&#8203;S &#8203;v​&#8203;2.&#8203;​6&#8203;, y​ou can now change the theme of the UI to either dark or light<br><br>
+1​&#8203;0​&#8203;/​&#8203;2​&#8203;6 &#8203;N​&#8203;e​&#8203;w &#8203;se&#8203;​r&#8203;​v&#8203;e​&#8203;r &#8203;ad&#8203;d​&#8203;e​&#8203;d &#8203;- &#8203;B​&#8203;O​&#8203;O​&#8203;M​&#8203;B​&#8203;O​&#8203;O​&#8203;M​&#8203;B​&#8203;O​&#8203;O​&#8203;M&#8203;</p>
 </div>
   <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h2>G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; S&#8203;e&#8203;t&#8203;t&#8203;i&#8203;n&#8203;g&#8203;s</h2>
-    <h3>Ch&#8203;a&#8203;ng&#8203;e S&#8203;e&#8203;r&#8203;v&#8203;er</h3>
-    <div class="btn-group"><button onclick="location.replace('https://ixlmath.vercel.app');">I&#8203;X&#8203;L&#8203;M&#8203;A&#8203;T&#8203;H</button><button onclick="location.replace('https://weboomit.vercel.app');">W&#8203;E&#8203;B&#8203;O&#8203;O&#8203;M&#8203;I&#8203;T</button><button onclick="location.replace('https://boomboomboom.vercel.app');">B&#8203;O&#8203;O&#8203;M&#8203;B&#8203;O&#8203;O&#8203;M&#8203;B&#8203;O&#8203;O&#8203;M</button><button onclick="location.replace('https://cottonco.vercel.app');">C&#8203;O&#8203;T&#8203;T&#8203;O&#8203;N&#8203;C&#8203;O</button></div><br><br>
-    <h3>T&#8203;h&#8203;e&#8203;m&#8203;e&#8203;s</h3>
+    <p style="font-size: 37px;">G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; S&#8203;e&#8203;t&#8203;t&#8203;i&#8203;n&#8203;g&#8203;s</p>
+    <p style="font-size: 35px;">Ch&#8203;a&#8203;ng&#8203;e S&#8203;e&#8203;r&#8203;v&#8203;er</p>
+    <div class="btn-group"><button onclick="location.replace('https://ixlmath.vercel.app');">I&#8203;X&#8203;L&#8203;M&#8203;A&#8203;T&#8203;H</button><button onclick="location.replace('https://weboomit.vercel.app');">W&#8203;E&#8203;B&#8203;O&#8203;O&#8203;M&#8203;I&#8203;T</button><button onclick="location.replace('https://boomboomboom.vercel.app');">B&#8203;O&#8203;O&#8203;M&#8203;B&#8203;O&#8203;O&#8203;M&#8203;B&#8203;O&#8203;O&#8203;M</button><button onclick="location.replace('https://cottonco.vercel.app');">C&#8203;O&#8203;T&#8203;T&#8203;O&#8203;N&#8203;C&#8203;O</button></div>
+    <p style="font-size: 35px;">T&#8203;h&#8203;e&#8203;m&#8203;e&#8203;s</p>
     <div class="btn-group"><button onclick="theme()">D&#8203;a&#8203;r&#8203;k&#8203;/&#8203;L&#8203;i&#8203;g&#8203;h&#8203;t &#8203;T&#8203;h&#8203;e&#8203;m&#8203;e</button>
     </div><br><br>
-    <p>Y&#8203;o&#8203;u&#8203; a&#8203;r&#8203;e &#8203;r&#8203;un&#8203;n&#8203;i&#8203;n&#8203;g &#8203;G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; &#8203;s&#8203;t&#8203;a&#8203;b&#8203;l&#8203;e&#8203; &#8203;v&#8203;2&#8203;.&#8203;6&#8203;<br>More options coming soon!</p>
+    <p>Y&#8203;o&#8203;u&#8203; a&#8203;r&#8203;e &#8203;r&#8203;un&#8203;n&#8203;i&#8203;n&#8203;g &#8203;G&#8203;a&#8203;m&#8203;e&#8203;O&#8203;S&#8203; &#8203;s&#8203;t&#8203;a&#8203;b&#8203;l&#8203;e&#8203; &#8203;v&#8203;2&#8203;.&#8203;6&#8203;<br>M&#8203;​o&#8203;​r&#8203;​e&#8203; o&#8203;​p&#8203;​t&#8203;​i&#8203;​o&#8203;​n&#8203;​s&#8203; c&#8203;​o&#8203;​m&#8203;​i&#8203;​n&#8203;​g&#8203; s&#8203;​o&#8203;​o&#8203;​n&#8203;​&#8203;!</p>
   </div>
     </div>
 </div>
@@ -314,6 +325,36 @@ url: "/pc.html"
 </script>
 <script>
 $(document).ready(function(){
+$("#bk").click(function(){
+new WinBox({
+
+title: "GameOS Bookmarklet",
+background: "rgba(80, 80,110, 1)",
+class: ["iframe"],
+max: true,
+border: 0,
+url: "/bk.html"
+});
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#intro").click(function(){
+new WinBox({
+
+title: "GameOS Instructions",
+background: "rgba(80, 80,110, 1)",
+class: ["iframe"],
+max: true,
+border: 0,
+url: "https://incertae.vercel.app/full.html"
+});
+});
+});
+</script>
+<script>
+$(document).ready(function(){
 $("#list").click(function(){
 new WinBox({
 
@@ -346,6 +387,13 @@ window.onclick = function(event) {
 $(document).ready(function(){
 $("#rr").click(function(){
 location.replace('/rr.html');
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#exit").click(function(){
+location.replace('https://classroom.google.com');
 });
 });
 </script>
